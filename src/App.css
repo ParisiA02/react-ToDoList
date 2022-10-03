@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.main {
+  box-sizing: border-box;
+  margin: 50px auto;
+  width: 400px;
+  min-height: 200px;
+  border-radius: 20px;
+  border: 1px solid #a020f0;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #a020f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container {
+  padding: 10px 40px 20px 40px;
+  min-height: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title-section {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-task {
+  font-size: 17px;
+  width: 240px;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-task:focus {
+  outline: 1px solid black;
+}
+
+.btn-add {
+  margin: 0 0 0 24px;
+  padding: 8px 13px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.btn-add:hover:enabled {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.tasklist-container {
+  width: 360px;
+}
+
+.ul-tasklist {
+  list-style-type: none;
+}
+
+.li-tasklist {
+  font-size: 25px;
+}
+
+.label-container-tasklist {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  margin-bottom: 5px;
+}
+
+.label-tasklist {
+  margin-bottom: 1px;
+}
+
+.line-tasklist {
+  margin-bottom: 5px;
+  border-top: 1px solid #a020f0;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(56%) saturate(5847%)
+    hue-rotate(272deg) brightness(93%) contrast(105%);
+}
+
+.btn-remove {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.btn-removeAll {
+  font-size: 20px;
+  padding: 5px 18px;
+  border-radius: 10px;
+  background-color: #a020f0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  float: right;
+  margin: 7px 35px 20px 20px;
+}
+
+.checked {
+  text-decoration: line-through;
 }
